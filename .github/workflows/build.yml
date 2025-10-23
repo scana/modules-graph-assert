@@ -7,4 +7,4 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v3
       - name: Run Tests
-        run: ./gradlew check --stacktrace -X lintJvm
+        run: ./gradlew check --stacktrace -x lintJvm
