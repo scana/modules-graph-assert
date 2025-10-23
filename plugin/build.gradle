@@ -2,10 +2,13 @@ plugins {
   id "java-gradle-plugin"
   alias(libs.plugins.kotlin.jvm)
   alias(libs.plugins.gradle.publish)
+  alias(libs.plugins.lint)
 }
 
 dependencies {
   implementation gradleApi()
+
+  lintChecks libs.androidx.gradleLintChecks
 
   testImplementation libs.junit
 }
